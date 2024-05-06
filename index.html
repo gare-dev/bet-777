@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="fixed text-center w-full text-7xl text-slate-50 h-24 bg-black">REGISTER</header>
+
+    <form method="post" action="action.php">
+        
+
+        <div class="grid justify-center pt-48">
+            <div class="flex rounded-2xl flex-col gap-3 justify-center items-center bg-gray-800 w-80 h-96">
+                <div class="grid flex-row gap-3">
+                    <label class="text-slate-50" for="loginTxt">LOGIN </label>
+                    <input class="bg-gray-500 outline-none w-48 h-10 focus:border rounded-md" name="logintxt" type="text" id="logintxt">
+                </div>
+                <div class="grid flex-row gap-3">
+                    <label class="text-slate-50" for="pass">SENHA </label>
+                    <input class="bg-gray-500 outline-none w-48 h-10 focus:border rounded-md" name="senha" type="password" id="senha">
+                </div>
+                <div class="grid flex-row gap-3">
+                    <label class="text-slate-50" for="dica">DICA</label>
+                    <input class="bg-gray-500 outline-none w-48 h-10 focus:border rounded-md" name="dica" type="text" name="dica"
+                        id="dica">
+                </div>
+                <div class="flex flex-row gap-3 pt-4">
+                    <input class="bg-white h-8 w-14 rounded-lg hover:bg-green-600 transition-all" type="submit"
+                        value="Entrar">
+                    <input class="bg-white h-8 w-14 rounded-lg hover:bg-red-800 transition-all" type="reset"
+                        value="Limpar">
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
