@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+}
+
+#login_label,
+#password_label,
+#tip_label {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.input_focus:focus {
+
+    transform: scale(103%);
+    transition: all 0.4s ease-in;
+
+}
+
+
+#submit_button {
+    background: rgb(28, 130, 44);
+    background: linear-gradient(90deg, rgba(28, 130, 44, 1) 43%, rgba(35, 209, 53, 1) 89%);
+    transition: all 1s;
+    font-size: 25px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+#submit_button:hover {
+
+    background: rgb(8, 150, 64);
+    background: radial-gradient(circle, rgba(8, 150, 64, 1) 23%, rgba(15, 128, 11, 1) 100%);
+}
+
+#container_box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
