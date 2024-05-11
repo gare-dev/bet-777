@@ -27,15 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         echo "Teste";
 
     }
-    else if(!$login_found || $_SERVER["REQUEST_METHOD"] != "GET") {
-        echo "<script>";
-        echo "window.location = 'login.html';"
-        echo "
 
-        const textError = document.getElementById('div_error');
-        textError.style.display = 'initial';"
-        echo "</script>";
-    }
 
 }
 $conn->close();

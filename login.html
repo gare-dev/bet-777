@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script/script_login.js"></script>
     <link rel="stylesheet" href="/style/style.css">
+
 </head>
 
 <body>
@@ -18,35 +19,41 @@
     <form method="get" action="php/loginForm.php">
         <div class="grid justify-center pt-32">
             <div id="container_box_shadow"
-                class="flex pb-10 rounded-2xl flex-col gap-3 justify-center items-center bg-gray-800 w-80 h-auto">
-                <div class="grid pt-6 flex-row gap-3">
-                    <label id="login_label" class="text-slate-50" for="loginTxt">Login
-                    </label>
+                class="flex pb-10 rounded-2xl flex-col gap-7 pt-10 justify-center items-center bg-gray-800 w-80 h-auto">
+                <div class="relative">
+
                     <input required
                         class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
-                        placeholder="What's your name?" name="logintxt" type="text" id="logintxt" />
+                        name="logintxt" type="text" id="login_login" />
+                    <label id="login_label" class="text-slate-50 label_effect" for="logintxt">Login</label>
+
                 </div>
-                <div class="grid flex-row gap-3">
-                    <label id="password_label" class="text-slate-50" for="pass">Password
-                    </label>
+                <div class="relative">
+
                     <input required
                         class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
-                        placeholder="Type your password" name="senha" type="password" id="senha" />
+                        name="senha" type="password" id="login_password" />
+                    <label id="password_label" class="text-slate-50 label_effect" for="login_password">Password</label>
+
                 </div>
 
                 <div class="flex flex-row gap-3 pt-4">
-                    <input id="submit_button"
-                        class="h-auto w-48 p-1 text-slate-50 rounded-xl hover:cursor-pointer transition-all"
-                        type="submit" value="Enter" />
+
+                    <input id="login_submit_button"
+                        class="h-auto w-48 p-1 text-slate-50 rounded-xl hover:cursor-pointer transition-all submit_button"
+                        type="submit" value="Enter"/>
+
                 </div>
 
-                <div>
-                    <h2 class="text-white text_already_login">
-                        Dont't have an account?
-                    </h2>
+                <div class="flex flex-row gap-1">
+
+                    <h2 class="text-white text_already_login">Dont't have an account?</h2>
                     <a class="text-teal-400 tex-left hover:text-teal-500" href="register.html"
                         id="login_text">Register</a>
+
                 </div>
+
+
                 <div id="div_error" style="display: none;" class="div_text_error">
                     <h1 id="text_error_login" class="text-red-500">Login ou senhas incorretos.</h1>
                 </div>
@@ -59,5 +66,6 @@
     </div>
 
 </body>
+
 
 </html>

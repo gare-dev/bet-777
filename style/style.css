@@ -7,46 +7,37 @@
 }
 
 body {
-    background: rgb(83,3,3);
-    background: linear-gradient(90deg, rgba(83,3,3,1) 0%, rgba(217,33,33,1) 50%, rgba(83,3,3,1) 100%);
+    background: rgb(83, 3, 3);
 }
 
 input {
     border: none;
 }
 
-#login_label,
-#password_label,
-#tip_label {
+
+.labelEffect {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     letter-spacing: 0.2px;
 }
 
-.input_focus:focus {
-    transform: scale(103%);
-    transition: all 0.4s ease-in;
-}
 
-#submit_button {
+
+.submit_button {
     background: rgb(28, 130, 44);
-    background: linear-gradient(
-        90deg,
-        rgba(28, 130, 44, 1) 43%,
-        rgba(35, 209, 53, 1) 89%
-    );
+    background: linear-gradient(90deg,
+            rgba(28, 130, 44, 1) 43%,
+            rgba(35, 209, 53, 1) 89%);
     transition: all 1s;
     font-size: 25px;
     font-family: "Barlow Condensed", sans-serif;
 }
 
-#submit_button:hover {
+.submit_button:hover {
     background: rgb(8, 150, 64);
-    background: radial-gradient(
-        circle,
-        rgba(8, 150, 64, 1) 23%,
-        rgba(15, 128, 11, 1) 100%
-    );
+    background: radial-gradient(circle,
+            rgba(8, 150, 64, 1) 23%,
+            rgba(15, 128, 11, 1) 100%);
 }
 
 #container_box_shadow {
@@ -54,11 +45,35 @@ input {
 }
 
 .text_already_login,
-#login_text {
+#login_login {
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.5px;
 }
 
+.label_effect {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s;
 
+}
 
+.input_focus:focus ~ .label_effect{
+
+    top: -23px;
+    font-size: 12px;
+    color: red;
+    left: 5px;
+
+}
+
+.input_focus:valid ~ .label_effect {
+
+    color: green;
+    top: -23px;
+    font-size: 12px;
+    left: 5px;
+
+}
 

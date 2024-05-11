@@ -15,39 +15,39 @@
     </header>
 
     <form method="post" action="php/registerForm.php">
-        <div class="grid justify-center pt-32">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <div id="container_box_shadow"
-                class="flex pb-10 rounded-2xl flex-col gap-3 justify-center items-center bg-gray-800 w-80 h-auto">
-                <div class="grid pt-6 flex-row gap-3">
-                    <label id="login_label" class="text-slate-50" for="loginTxt">Login
+                class="flex pb-10 rounded-2xl flex-col gap-7 justify-center items-center bg-gray-800 w-80 h-auto pt-12">
+                <div class="relative">
+
+                    <input required
+                        class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
+                         name="logintxt" type="text" id="register_login"/>
+                    <label id="register_login_label" class="text-slate-50 label_effect" for="loginTxt">Login
                     </label>
-                    <input
-                        required
-                        class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
-                        placeholder="What's your name?" name="logintxt" type="text" id="logintxt" />
                 </div>
-                <div class="grid flex-row gap-3">
-                    <label id="password_label" class="text-slate-50" for="pass">Password
+                <div class="relative">
+
+                    <input required
+                        class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
+                         name="senha" type="password" id="register_password" />
+                    <label id="register_password_label" class="text-slate-50 label_effect" for="pass">Password
                     </label>
-                    <input
-                        required
-                        class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
-                        placeholder="Type your password" name="senha" type="password" id="senha" />
                 </div>
-                <div class="grid flex-row gap-3">
-                    <label id="tip_label" class="text-slate-50" for="dica">Dica</label>
-                    <input
-                        required
+                <div class="relative">
+                    <input required
                         class="bg-gray-500 outline-none w-48 h-10 focus:border pl-1 rounded-md placeholder:text-slate-50 placeholder:opacity-50 input_focus"
-                        placeholder="Write a simple tip" name="dica" type="text" name="dica" id="dica" />
+                         name="dica" type="text" name="dica" id="register_tip" />
+                    <label id="register_tip_label" class="text-slate-50 label_effect" for="dica">Tip</label>
+
                 </div>
                 <div class="flex flex-row gap-3 pt-4">
-                    <input id="submit_button"
-                        class="h-auto w-48 p-1 text-slate-50 rounded-xl hover:cursor-pointer transition-all"
+                    <input id="register_submit_button"
+                        class="h-auto w-48 p-1 text-slate-50 rounded-xl hover:cursor-pointer transition-all submit_button"
                         type="submit" value="Register" />
                 </div>
 
-                <div>
+                <div class="flex flex-row gap-1">
                     <h2 class="text-white text_already_login">
                         Already have an account?
                     </h2>
